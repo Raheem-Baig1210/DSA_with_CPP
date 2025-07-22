@@ -7,6 +7,7 @@ int main(){
     for(i=2;i<n;i++){
         if(n%i==0){
             isPrime=false;
+            break;
         }
     }
     cout<<(isPrime ? "Given number is Prime Number":"Given number is Not a Prime Number");
