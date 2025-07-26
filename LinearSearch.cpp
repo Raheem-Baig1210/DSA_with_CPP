@@ -15,6 +15,7 @@ int main(){
         if(arr[i]==a){
             cout<<"Element found at index "<<i;
             b=false;
+            break;
         }
     }
     if(b){
