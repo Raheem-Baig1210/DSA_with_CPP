@@ -2,7 +2,7 @@
 using namespace std;
 
 
-int intersection(int arr1[],int n,int arr2[],int m){
+int AMinusB(int arr1[],int n,int arr2[],int m){
     int i,j,a;
     for(i=0;i<n;i++){
         a=true;
@@ -15,18 +15,6 @@ int intersection(int arr1[],int n,int arr2[],int m){
         if(a){
             cout<<arr1[i]<<" ";
         }
-    }
-    for(i=0;i<m;i++){
-        a=true;
-        for(j=0;j<n;j++){
-            if(arr2[i]==arr1[j]){
-                a=false;
-                break;
-            }
-        }
-        if(a){
-            cout<<arr2[i]<<" ";
-        }
     }    
 }
 
@@ -36,14 +24,16 @@ int main(){
     cout<<"Enter the size of first array : ";
     cin>>n;
     int arr1[n];
+    cout<<"Enter the values : ";
     for(i=0;i<n;i++){
         cin>>arr1[i];
     }
     cout<<"Enter the size of second array : ";
     cin>>m;
     int arr2[m];
+    cout<<"Enter the values : ";
     for(i=0;i<m;i++){
         cin>>arr2[i];
     }
-    intersection(arr1,n,arr2,m);
+    AMinusB(arr1,n,arr2,m);
 }
